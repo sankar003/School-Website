@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>SANKAR HIGHER SECONDARY SCHOOL</title>
+<link rel="stylesheet" href="style.css"/>
+<!--fav-icon-->
+<link rel="shortcut icon" href="favicon.png"/>
+<style>
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+    
+    <section class="main" style="background-image: url(hero-bg.png);">
+        
+        <nav>
+            <a href="#" class="logo">
+                <img src="logo.png" width="320px" />
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+                <li><a href="#text">About</a></li>
+                <li><a href="#address ">Contact</a></li>
+                <li><a href="attance.html">QUARIES</a></li>
+                <li><a href="att.html">ATTENDANCE</a></li>
+                <li><a href="fees.html">fees</a></li>
+                <li><a href="#iaf">Facilities</a></li>
+                <li><a class ="active" href="student.html"style="width:auto; border-radius: 5px; cursor: pointer;">Login</a></li>
+           <!-- <li><a class="active" onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 5px; cursor: pointer;">Login</a></li>
+            -->
+            </ul>
+        </nav>
+       
+        <!-- login modal start -->
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post" style="
+            width: 400px;
+        ">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <p style="font-size: 22px;">Student Login </p>
+                <hr>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Register Here</a></span>
+                <span class="psw" style="margin-right: 11px;"><a href="#">Forgot  password?</a></span>
+              </div>
+            </form>
+          </div>
+        <!-- login modal end  -->
+
+
+        <!--main-content-->
+        <div class="home-content">
+            
+            <!--text-->
+            <div class="home-text" >
+                
+                <h3 style="color: white; letter-spacing: 3px;">Welcome to SANKAR SCHOOL</h3>
+                <h1 style="color: white;"> Student Portal</h1>
+                <p style="color: white;">The purpose of Schools is to prepare students with promise
+                    to enhance their intellectual, physical, social, emotional, spiritual,
+                    and artistic growth so that they may realize their power for good
+                    as citizens</p>
+            <!--login-btn-->
+            <a href="admission.html" class="main-login" style="border-radius: 5px;">Admission</a>
+            </div>
+            <!--img-->
+            <div class="home-img" style="width: 500px;">
+                <img src="hero.png" width="500px" style="text-shadow: 20px 22px;"/>
+                <marquee width="100%" direction="left" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: white;">Admission open for Class 1 to 12</a>
+                    </marquee>
+                    <marquee width="100%" direction="right" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: white;">Fess structure</a>
+                    </marquee>
+            </div>
+            
+        </div>
+        
+        <!--arrow-->
+        <div class="arrow"></div>
+        <span class="scroll">Scroll</span>
+    </section>
+    
+    <!--services----------------------->
+    <section class="services">
+        <!--heading----------->
+        <div class="services-heading">
+            <h2 id="iaf">INFRASTRUCTURE & FACILITIES</h2>
+            </div>
+        <!--box-container----------------->
+        <div class="box-container">
+            <!--box-1-------->
+            <div class="box">
+                <img src="file.png">
+                <font>Smart Class</font>
+                <p>Smart board Available in every classroom has wide range of content from various boards.It enable student visualize and understand the difficult concepts</p>
+                <!--btn--------->
+            </div>
+            <!--box-2-------->
+            <div class="box">
+                <img src="file1.png">
+                <font>Laboratory </font>
+                <p>well equipped and spacious labs help in better understanding.The students are trained to carry every experiment to have greater insight into learning   </p>
+                <!--btn--------->
+            </div>
+            <!--box-3-------->
+            <div class="box">
+                <img src="file3.png">
+                <font>SMS Facility</font>
+                <p>A platform to bridge the gap between the school and parents.The school activies and the other important information are passed over to the parentts through platform</p>
+                <!--btn--------->
+                 </div>
+            <!--box-4-------->
+            <div class="box">
+                <img src="file4.png">
+                <font>Library</font>
+                <p>The library stacks over 15,000 books of various fields and is storehouse  of knowledge</p>
+                <!--btn--------->
+            </div>
+            <!--box-1-------->
+            
+        </div>
+    </section>
+    
+ <div id="box1" style="position: absolute;top:1300px;">
+<div id="text">
+<h2 style="font-size: 50px;font-weight: bold;">About us</a></h2>
+               <p style="font-weight: bold ;color: black;">
+              Sankar  Higher secondary school was inaugurated on 15th June 1952, by the Honourable Justice, Sri.M.ROCKY, Chairperson Appellate Tribunal for Electricity, NewDelhi. Our school has Secondary School affiliation with the Central Board of Secondary Education, New Delhi, vide Affiliation No. 1930487.
+
+ 
+The strength of the school from classes JM1 to VII on the day of inauguration was 2213. Classes VIII and IX were added in the subsequent years, at one class per year. The first batch of class X students will appear for the Board examination in March 2016. The school will be upgraded to Senior Secondary level in the academic year 2016 -17 and the first batch of class XII students will appear for the Board examination in March 2018.</p>
+         
+
+</div>
+
+
+</div>   
+
+
+    <div class="con" style="
+	    height:250px;
+	    width:100%;
+	    background: #3b3b3b;
+	    position: absolute;
+	    top:1650px;
+	    left:0px;
+    ">
+    <div id=address style="
+	position: absolute;
+	 top:40px;
+	 left: 30px;
+	 color: white;
+	 font-weight: bold;">
+   <h3 style="color: white;font-size: 30px;font-weight: bolder"> Address</h3>	
+17/31,K.G.F Street,<br>
+Rocky Nagar,Tambaram,<br>
+Chennai-600063.<br>
+Ph-9867542312.<br>
+Sankarveg@gmail.com<br>
+    </div>
+    <div id=add style="
+	position: absolute;
+	 top:50px;
+	 left:40%;
+	 font-weight: bold;
+    ">
+   <h3 style="color: white;font-size: 30px;font-weight: bolder"> Social Media</h3>	
+<a style="text-decoration: none;color: white" href="NewFile.html">Facebook</a><br>
+<a style="text-decoration: none;color: white"href="home.html">Instagram</a><br>
+<a style="text-decoration: none;color: white"href="home.html">YouTube</a><br>
+<a style="text-decoration: none;color: white"href="home.html">Twitter</a><br>
+
+    </div>
+    <div id=com  style="	position: absolute;
+	 top:50px;
+	 left:70%;
+	 font-weight: bold;
+    ">
+    <h3 style="color: white;font-size: 30px;font-weight: bolder">Review</h3>
+    <input type="text"style="height: 30px;width: 300px;">
+
+    
+    </div>
+    </div>
+    <div id="green" style="height:50px;
+	    width:100%;
+	    background-color:#1F45FC;
+	    position: absolute;
+	    top:1890px;
+	    left:0px;">
+    <p style="color: white;font-weight: bolder;position: absolute;top:0px;left:40%;font-size: 20px;">Devloped By SANKAR TECH</p>
+    </div>
+
+	 	    
+    <!--footer
+    <footer>
+        <p> Developed By SANKAR TECH</a> </p>
+    </footer>  ------------->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+
+</html>

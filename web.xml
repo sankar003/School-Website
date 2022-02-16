@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<servlet>
+<servlet-name>Login</servlet-name>
+<servlet-class>slider.Example</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Login</servlet-name>
+<url-pattern>/Example</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>sign</servlet-name>
+<servlet-class>slider.sql</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>sign</servlet-name>
+<url-pattern>/sql</url-pattern>
+</servlet-mapping>
+
+</web-app>
